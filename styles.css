@@ -1,0 +1,78 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    src: url("./fonts/static/Montserrat-Light.ttf") format("ttf");
+   
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url("./fonts/static/Montserrat-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src: url("./fonts/static/Montserrat-Medium.ttf") format("ttf");
+}
+/* @font-face {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src: url("./fonts/static/Montserrat-SemiBold.ttf") format("ttf");
+
+    
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('./fonts/static/Montserrat-Bold.ttf') format("ttf");
+} */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  
+}
+
+/* body, button, input, textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+} */
+
+.btn {
+    background-color: rgba(96, 96, 96, .68);
+    color: #F65561;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    margin: 10px 20px 30px 50px;
+  cursor: pointer;
+  padding: 11px 18px;
+}
+
+.container {
+    width: 900px;
+    padding: 20px 60px;
+}
+
+.search-input {
+    max-width: 713px;
+    width: 100%;
+    height: 57px;
+    background-color: rgba(50, 50, 50, .8);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+}
