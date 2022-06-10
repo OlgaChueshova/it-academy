@@ -1,16 +1,44 @@
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
 }
 
 @font-face {
+    font-family: 'Roboto';
     font-weight: 400;
     src: url('/fonts/Roboto-Regular.ttf') format('trutype');
 }
 
 @font-face {
+    font-family: 'Roboto';
     font-weight: 700;
     src: url('/fonts/Roboto-Bold.ttf') format('trutype');
+}
+
+
+.style {
+    font-family: 'Roboto';
+    font-weight: 400;
+    width: 100vw;
+    height: auto;
+    padding: 100px;
+    margin: 0;
+    text-align: center;
+    line-height: 150%;
+    white-space: normal;
+    background-color: transparent;
+    background-image: url('/images/ramka.png');
+
+    /* background-image: url('/images/top-left.png') no-repeat left top;
+    background-image: url('/images/top-right.png') no-repeat right top; 
+    background-image: url('/images/bottom-left.png') no-repeat left bottom;
+    background-image: url('/images/bottom-right.png') no-repeat right bottom;
+    background-image: url('/images/middle.png') repeat-y;
+    background-image: url('/images/top.png') repeat-x; */
+
+    background-position: center center;
+    background-size: cover;
+
 }
