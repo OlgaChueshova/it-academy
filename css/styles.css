@@ -22,3 +22,41 @@ body {
     font-weight: 700;
     src: url('../fonts/Roboto-Bold.ttf') format('trutype');
 }
+
+.background {
+    border-collapse: collapse;
+    background: url('../images/Soccerball.jpg');
+    background-repeat: repeat-y;
+    background-position-x: right;
+    background-position-y: center;
+
+}
+
+
+.header {
+    font-weight: 500;
+    font-size: 40px;
+    font-variant: small-caps;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: blue;
+    background-color: aqua;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black
+}
+
+.nav {
+    width: 25%;
+    background-color: yellow;
+    font-size: 20px;
+
+}
