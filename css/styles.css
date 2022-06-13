@@ -41,7 +41,7 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     color: blue;
-    background-color: aqua;
+    background-color: rgba(147, 180, 237, 0.5);
 }
 
 .subtitle {
@@ -56,7 +56,25 @@ body {
 
 .nav {
     width: 25%;
-    background-color: yellow;
     font-size: 20px;
+    background-color: rgba(242, 205, 116, 0.5);
 
+}
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-indent: 10px;
+    text-align: justify;
+    text-indent: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.image {
+    padding: 10px;
+    margin: 10px;
 }
