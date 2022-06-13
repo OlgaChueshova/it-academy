@@ -74,4 +74,8 @@ body {
     line-height: 150%;
     text-indent: 10px;
     text-align: justify;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
 }
