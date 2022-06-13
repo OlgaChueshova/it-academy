@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('../fonts/Roboto-Regular.ttf') format('trutype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url('../fonts/Roboto-Medium.ttf') format('trutype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('../fonts/Roboto-Bold.ttf') format('trutype');
+}
+
+.header {
+    font-weight: 500;
+    font-size: 35px;
+    font-variant: small-caps;
+    padding: 5px;
+    text-align: center;
+    color: blue;
+    background-color: rgba(147, 180, 237, 0.5);
+    width: 100vw;
+    height: max-content;
+}
+
+.nav {
+    width: 25%;
+    float: left;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black
+}
+
+.content {
+    margin-left: 25%;
+    padding: 15px;
+    background-image: url('../images/Soccerball.jpg');
+    background-repeat: repeat-y;
+    background-position-x: right;
+    background-position-y: center;
+    background-color: white;
+
+}
+
+.images {
+    margin: 10px;
+    float: left;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-indent: 10px;
+    text-align: justify;
+}
