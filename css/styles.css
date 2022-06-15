@@ -25,37 +25,51 @@ body {
 
 
 .header {
+    border: solid violet 1px;
+    width: 100vw;
+    height: 95px;
+    display: block;
     font-weight: 500;
     font-size: 35px;
     font-variant: small-caps;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
     color: blue;
     background-color: rgba(147, 180, 237, 0.5);
-    width: 100vw;
-    padding-top: 15px;  
-    padding-bottom: 15px;
-    
-    
+
 }
 
 
+.main {
+    border: solid blue 1px;
+    width: 100vw;
+    height: calc(100vh-95px-95px);
+    background-color: rgba(242, 205, 116, 0.5);
+
+}
+
 .content {
-    /* margin-left: 300px; */
-    background-color: white;
     background-image: url('../images/Soccerball.jpg');
     background-repeat: repeat-y;
     background-position-x: right;
     background-position-y: center;
-    border: solid gray 1px;
-    
-   }
+    background-color: white;
+    border: solid black 1px;
+    width: calc('100vw-300px');
+    min-width: 300px;
+    margin-left: 300px;
+    margin-right: 0px;
+ 
+}
 
-   .nav {
+.sidebar {
+    border: solid red 1px;
     float: left;
     width: 300px;
+    font-weight: 400;
     font-size: 20px;
-    background-color: rgba(242, 205, 116, 0.5);
-    
+  
 }
 
 .subtitle {
@@ -63,21 +77,26 @@ body {
     font-size: 20px;
     font-variant: small-caps;
     text-align: center;
-    color: black
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 .floatimage {
     float: left;
     width: 300px;
-    height: 199px;
+    height: 200px;
+    padding: 10px;
 }
 
 .text {
+    border: solid yellow 1px;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    text-indent: 10px;
+    text-indent: 20px;
     text-align: justify;
-    /* margin-left: 300px; */
+    padding: 20px;
 
 }
