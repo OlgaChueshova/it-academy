@@ -1,0 +1,59 @@
+body {
+    margin: 50px;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('../fonts/Roboto-Regular.ttf') format('trutype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url('../fonts/Roboto-Medium.ttf') format('trutype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('../fonts/Roboto-Bold.ttf') format('trutype');
+}
+
+p {
+    color: blue;
+    font-style: italic;
+}
+
+p::first-line {
+    font-weight: bold;
+    color: black;
+    font-style: normal;
+}
+
+p span:nth-of-type(2) {
+    color: green;
+    font-style: normal;
+}
+
+p span:nth-of-type(3) {
+    color: red;
+    font-style: normal;
+}
+
+p span:nth-of-type(4) {
+    font-style: normal;
+    font-weight: 700;
+}
+
+p a::before {
+    content: url('../images/extref.png');
+}
+
+
+
