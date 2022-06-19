@@ -54,11 +54,10 @@ body {
     background-position-x: right;
     background-position-y: center;
     background-color: white;
-    width: 75%;
     min-width: 300px;
     margin-left: 300px;
     margin-right: 0px;
-        
+
 }
 
 .sidebar {
