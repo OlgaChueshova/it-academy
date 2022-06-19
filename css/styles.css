@@ -1,0 +1,17 @@
+.main {
+    width: fit-content;
+}
+
+div.main>div {
+    display: inline-block;
+    background-image: url('../images/star1.png');
+
+}
+
+div.main:hover>div>img {
+    visibility: hidden;
+}
+
+div.main>div:hover~div>img {
+    visibility: visible;
+}
