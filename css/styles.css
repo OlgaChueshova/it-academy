@@ -1,6 +1,6 @@
 body {
-    margin: 50px;
-    padding: 0;
+    margin: 0;
+    padding: 50px;
     width: 100vw;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
@@ -25,35 +25,44 @@ body {
     src: url('../fonts/Roboto-Bold.ttf') format('trutype');
 }
 
+div {
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: black;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h4~span {
+    color: green;
+}
+
+span~span {
+    color: red;
+}
+
 p {
     color: blue;
     font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
-p::first-line {
+a {
+    text-decoration: none;
     font-weight: bold;
-    color: black;
+
+}
+
+div>a {
+    color: blue;
     font-style: normal;
+    font-weight: bold;
+    padding-left: 20px;
+    background-image: url('../images/extref.png');
+    background-position: left;
+    background-repeat: no-repeat;
 }
-
-p span:nth-of-type(2) {
-    color: green;
-    font-style: normal;
-}
-
-p span:nth-of-type(3) {
-    color: red;
-    font-style: normal;
-}
-
-p span:nth-of-type(4) {
-    font-style: normal;
-    font-weight: 700;
-}
-
-p a::before {
-    content: url('../images/extref.png');
-}
-
-
-
