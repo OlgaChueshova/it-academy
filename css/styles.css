@@ -23,29 +23,70 @@ body {
     src: url('../fonts/Roboto-Bold.ttf') format('trutype');
 }
 
-
-.header {
+.container {
+    display: flex;
+    flex-flow: column;
     width: 100vw;
-    height: 95px;
-    display: block;
-    font-weight: 500;
-    font-size: 35px;
-    font-variant: small-caps;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
     color: blue;
     background-color: rgba(147, 180, 237, 0.5);
+    text-align: center;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+footer {
+    color: blue;
+    background-color: rgba(147, 180, 237, 0.5);
+    text-align: center;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+main {
+    flex: 1 1 auto;
 
 }
 
+main>div:first-child {
+    display: inline-block;
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    right: 30px;
+    top: 30px;
+    border: solid rgb(12, 27, 12) 1px;
+    background-color: rgb(34, 228, 34);
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 18px;
+    padding: 10px;
+}
 
-.main {
-    width: 100vw;
-    min-width: 600px;
-    height: calc(100vh-95px-95px);
+main>div:last-child {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 100%;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 25px;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+aside {
     background-color: rgba(242, 205, 116, 0.5);
-
+    min-width: 300px;
+    font-weight: 400;
+    font-size: 25px;
+    align-items: stretch;
 }
 
 .content {
@@ -53,46 +94,87 @@ body {
     background-repeat: repeat-y;
     background-position-x: right;
     background-position-y: center;
-    background-color: white;
-    min-width: 300px;
-    margin-left: 300px;
-    margin-right: 0px;
-
-}
-
-.sidebar {
-    float: left;
-    width: 25%;
-    min-width: 300px;
     font-weight: 400;
     font-size: 20px;
-}
-
-.subtitle {
-    font-weight: 700;
-    font-size: 20px;
-    font-variant: small-caps;
-    text-align: center;
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0px;
-
-}
-
-.floatimage {
-    float: left;
-    width: 300px;
-    height: 200px;
-    padding: 10px;
-}
-
-.text {
-    font-weight: 400;
-    font-size: 18px;
     line-height: 150%;
     text-indent: 20px;
     text-align: justify;
-    padding: 20px;
+    padding: 10px;
+    min-width: 300px;
+    align-items: stretch;
+}
 
+img {
+    float: left;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        background-image: none;
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    main>div:last-child {
+        flex-wrap: wrap-reverse;
+    }
+
+    .content {
+        font-size: 15px;
+        padding: 7px;
+    }
+
+    aside {
+        background: none;
+        font-size: 15px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    a {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    main>div:first-child {
+        display: block;
+        position: relative;
+        top: 0px;
+        bottom: 0px;
+        width: 100vw;
+        height: fit-content;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+    }
+
+    main>div:first-child a {
+        color: rgb(16, 227, 16);
+    }
 }
