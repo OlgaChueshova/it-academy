@@ -23,3 +23,50 @@ body {
     src: url('../fonts/Roboto-Bold.ttf') format('trutype');
 }
 
+form {
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+    padding: 30px;
+
+}
+
+fieldset>div {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+label {
+    min-width: 300px;
+}
+
+[type*="text"] {
+    flex: 1 1 auto;
+    min-width: 300px;
+    align-items: stretch;
+}
+
+div div {
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 768px) {
+    fieldset>div {
+        flex-wrap: wrap;
+    }
+    div div {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+  
+    div:nth-of-type(4)>label {
+        min-width: 100px;
+    } 
+
+}

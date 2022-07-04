@@ -5,45 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAKET_ABC</title>
+    <title>MAKET_FORM (2)</title>
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
 <body>
-    
+
     <form method="post" action="publication.php">
-        <label>
-            Для публикации Вашей статьи заполните, пожалуйста, следующую форму: <br><br>
 
-            <label>Название статьи: <input type="text" name="name"><br></label>
+        <fieldset>
+            <legend>
+                Для публикации Вашей статьи заполните, пожалуйста, следующую форму:
+            </legend><br>
 
-            <label>
-                Рубрика: <select name="category" id="//">
+            <div>
+                <label for="1">Название статьи:</label>
+                <input type="text" name="name" id="1"><br>
+            </div>
+
+            <div>
+                <label for="2">Рубрика:</label>
+                <select name="category" id="2">
                     <option value="programming" selected>программирование</option>
                     <option value="economy">экономика</option>
                     <option value="religion">религия</option>
                     <option value="psychology">психология</option>
                     <option value="art">искусство</option>
                 </select><br>
-            </label>
+            </div>
 
-            <label>
-                Публикация: <input type="radio" name="answer" value="1">на сайте<br>
-                <input type="radio" name="answer" value="2">в журнале<br>
-                <input type="radio" name="answer" value="3">на сайте и в журнале<br>
-            </label>
+            <div>
+                <label for="3">Публикация: </label>
+                <div>
+                    <div><input id="3" type="radio" name="answer" value="1">на сайте</div>
+                    <div> <input id="3" type="radio" name="answer" value="2">в журнале</div>
+                    <div><input id="3" type="radio" name="answer" value="3">на сайте и в журнале <br></div>
+                </div>
+            </div>
 
-            <label>
-                Разрешить комментарии: <input type="checkbox" name="comments" checked><br>
-            </label>
+            <div>
+                <label for="4">Разрешить комментарии:</label>
+                <input id="4" type="checkbox" name="comments" checked><br>
+            </div>
 
-            <label>
-                Текст статьи: <input type="text" name="article" maxlength="5000"><br><br>
-            </label>
+            <div>
+                <label for="5">Текст статьи:</label>
+                <input id="5" type="text" name="article" maxlength="5000"><br><br>
+            </div>
 
             <button type="submit">Опубликовать</button>
 
-        </label>
+        </fieldset>
 
     </form>
 
