@@ -1,0 +1,13 @@
+ellipse:hover {
+    fill: aquamarine;
+    stroke: black;
+}
+
+polygon:hover {
+    fill: red;
+    
+}
+
+rect:hover {
+transform: rotate(45);
+}
