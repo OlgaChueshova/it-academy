@@ -23,6 +23,21 @@ body {
     src: url('../fonts/Roboto-Bold.ttf') format('trutype');
 }
 
-li {
+h1 {
+    margin-left: 40px;
+}
+
+div {
+    width: 600px;
+    height: 100vh;
+    overflow: auto;
+}
+
+ul {
     list-style-type: none;
 }
+
+li {
+    margin-bottom: 20px;
+}
+
