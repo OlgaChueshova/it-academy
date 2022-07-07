@@ -1,0 +1,23 @@
+.image {
+    width: 100vw;
+    height: 100vh; 
+}
+
+.background {
+    display: block;
+    width: 100wv;
+    height: 100vh;
+    background-image: url('../images/star_86960.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.picture {
+    width: 100vw;
+    height: 100vh;
+}
+
+svg {
+    width: 100vw;
+    height: 100vh;
+}
