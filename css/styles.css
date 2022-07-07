@@ -1,13 +1,27 @@
-ellipse:hover {
+
+.svgimage__frame:hover {
     fill: aquamarine;
     stroke: black;
+    transition-duration: 3s;
 }
 
-polygon:hover {
+.svgimage__home:hover {
+    fill: coral;
+      
+}
+
+.svgimage__door:hover {
+     stroke: red;
+     transform: rotate(45);
+          
+}
+
+.svgimage__windows:hover {
+  transform: scale(1.5);
+}
+
+.svgimage__roof:hover {
     fill: red;
-    
-}
-
-rect:hover {
-transform: rotate(45);
+    transform: translate(0 30);
+              
 }
