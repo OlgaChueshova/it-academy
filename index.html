@@ -13,6 +13,27 @@
 
     <div>
 
+        <svg id="text-container" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="Gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ED6E46" />
+                    <stop offset="10%" stop-color="#b4c63b" />
+                    <stop offset="20%" stop-color="#ef5b2b" />
+                    <stop offset="30%" stop-color="#503969" />
+                    <stop offset="40%" stop-color="#ab6294" />
+                    <stop offset="50%" stop-color="#1cb98f" />
+                    <stop offset="60%" stop-color="#48afc1" />
+                    <stop offset="70%" stop-color="#b4c63b" />
+                    <stop offset="80%" stop-color="#ef5b2b" />
+                    <stop offset="90%" stop-color="#503969" />
+                    <stop offset="100%" stop-color="#ab6294" />
+                </linearGradient>
+            </defs>
+
+            <text id="text-anim" x="200" y="120" fill="url(#Gradient-2)" font-family="Roboto" font-size="80"
+                font-weight="700" text-anchor="middle">Привет!</text>
+        </svg>
+
         <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <radialGradient id="Gradient-1" cx="50%" cy="50%">
@@ -31,41 +52,20 @@
                 values="0; 1; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" id="opacity-anim"></animate>
         </svg>
 
-        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-            <circle id="circle-anim" cx="100" cy="100" r="75" fill="#EE82EE" />
+        <svg id="circle-container" xmlns="http://www.w3.org/2000/svg">
+            <circle id="circle-anim" cx="150" cy="150" r="50" fill="#EE82EE" />
         </svg>
 
-        <svg width="350" height="200" xmlns="http://www.w3.org/2000/svg">
-            <rect id="rect-anim" x="50" y="50" width="200" height="100" fill="#F08080" stroke="#DC143C"
+        <svg id="rect-container" xmlns="http://www.w3.org/2000/svg">
+            <rect id="rect-anim" x="50" y="100" width="200" height="100" fill="#F08080" stroke="#DC143C"
                 stroke-width="10px" rx="10" ry="10" />
         </svg>
 
-        <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-            <ellipse id="ellipse-anim" cx="150" cy="100" rx="100" ry="50" fill="#9ACD32" stroke="#6B8E23"
+        <svg id="ellipse-container" xmlns="http://www.w3.org/2000/svg">
+            <ellipse id="ellipse-anim" cx="150" cy="150" rx="100" ry="50" fill="#9ACD32" stroke="#6B8E23"
                 stroke-width="3px" stroke-dasharray="5,5" stroke-linecap="round" />
         </svg>
-
-        <svg id="text" width="450px" height="200px" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="Gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#ED6E46" />
-                    <stop offset="10%" stop-color="#b4c63b" />
-                    <stop offset="20%" stop-color="#ef5b2b" />
-                    <stop offset="30%" stop-color="#503969" />
-                    <stop offset="40%" stop-color="#ab6294" />
-                    <stop offset="50%" stop-color="#1cb98f" />
-                    <stop offset="60%" stop-color="#48afc1" />
-                    <stop offset="70%" stop-color="#b4c63b" />
-                    <stop offset="80%" stop-color="#ef5b2b" />
-                    <stop offset="90%" stop-color="#503969" />
-                    <stop offset="100%" stop-color="#ab6294" />
-                </linearGradient>
-            </defs>
-            <text id="text-anim" x="60" y="120" fill="url(#Gradient-2)" font-family="Roboto" font-size="80"
-                font-weight="700" text-anchor="moddle">Привет!</text>
-            <animate xlink:href="text-anim"></animate>
-        </svg>
-
+     
     </div>
 
 </body>

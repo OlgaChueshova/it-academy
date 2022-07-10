@@ -23,33 +23,94 @@ body {
     src: url('../fonts/Roboto-Bold.ttf') format('trutype');
 }
 
-div:hover #rect-anim {
-    stroke-width: 15px;
-    stroke: red;
-    width: 250px;
-    height: 125px;
-
+#circle-container {
+    width: 300px;
+    height: 300px;
 }
 
 div:hover #circle-anim {
-    fill: aquamarine;
+    animation-name: circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes circle {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+#rect-container {
+    width: 300px;
+    height: 300px;
+}
+
+div:hover #rect-anim {
+    animation-name: stroke;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes stroke {
+    from {
+        stroke-width: 10px;
+        stroke: #DC143C;
+    }
+
+    to {
+        stroke-width: 30px;
+        stroke: red;
+    }
+}
+
+#ellipse-container {
+    width: 300px;
+    height: 300px;
 }
 
 div:hover #ellipse-anim {
-    rotate: 45;
-}
-
-#text {
-    overflow: hidden;
-}
-
-div:hover text {
-    animation-name: translate;
-    animation-duration: 5s;
+    animation-name: ellipse;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
-@keyframes translate {
+@keyframes ellipse {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+div {
+    display: block;
+    overflow: hidden;
+    width: 100vw;
+}
+
+#text-container {
+    display: block;
+    width: 300%;
+    height: 200px;
+    margin-left: 100%;
+}
+
+div:hover #text-container {
+    animation-name: text;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
     from {
         margin-left: 100%;
         width: 300%;
@@ -60,4 +121,3 @@ div:hover text {
         width: 100%;
     }
 }
-
