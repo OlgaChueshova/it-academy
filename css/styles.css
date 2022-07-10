@@ -23,3 +23,41 @@ body {
     src: url('../fonts/Roboto-Bold.ttf') format('trutype');
 }
 
+div:hover #rect-anim {
+    stroke-width: 15px;
+    stroke: red;
+    width: 250px;
+    height: 125px;
+
+}
+
+div:hover #circle-anim {
+    fill: aquamarine;
+}
+
+div:hover #ellipse-anim {
+    rotate: 45;
+}
+
+#text {
+    overflow: hidden;
+}
+
+div:hover text {
+    animation-name: translate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes translate {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
