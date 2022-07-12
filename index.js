@@ -7,23 +7,12 @@ let numAge = Number(age);
 
 let gender = confirm('Ваш пол мужской?');
 
-if (gender) {
-    gender = "мужской";
-}
-else {
-    gender = "женский";
-}
 
-if (numAge >= 65 && gender == 'мужской') {
-    pens = "да";
-}
-else if (numAge >= 55 && gender == 'женский') {
-    pens = "да";
-}
+gender ? gender = 'мужской' : gender = 'женский';
 
-else {
-    pens = "нет";
-}
+
+numAge >= 65 && gender == 'мужской' ? pens = "да" : numAge >= 55 && gender == 'женский' ? pens = "да" : pens = "нет";
+
 
 function sum(a, b) {
     return a + b;
